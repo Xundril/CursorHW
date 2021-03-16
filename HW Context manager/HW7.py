@@ -11,6 +11,6 @@ print(dict)
 
 # 2 Файл в якому знаходиться текст з якого видалені всі мітки часу. всі субтитри повинні мати вигляд простого тексту.
 
-with open('task1_2', 'w') as file:
+with open('task1_2.txt', 'w') as file:
     for text in dict.values():
         file.write(f'{text}')
