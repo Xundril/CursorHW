@@ -22,7 +22,7 @@ class Predator(Animal):
         super().__init__(strength, speed)
         self.id = None
         self.max_strength = strength
-        self.current_strength = 2.0
+        self.current_strength = 2
         self.speed = speed
 
     def eat(self, forest: Forest):
@@ -108,3 +108,83 @@ if __name__ == "__main__":
         for animal in forest.animals.values():
             animal.eat(forest=forest)
         time.sleep(1)
+
+
+## Output (one of other results):
+
+# There is new animal Predator
+# There is new animal Herbivorous
+# There is new animal Predator
+# There is new animal Predator
+# There is new animal Predator
+# There is new animal Predator
+# There is new animal Predator
+# There is new animal Herbivorous
+# There is new animal Herbivorous
+# There is new animal Herbivorous
+# Predator did not caught prey, both are tired
+# Herbivorous eating...
+# Herbivorous restored 43.0 strength
+# Predator did not caught prey, both are tired
+# Predator did not caught prey, both are tired
+# Predator did not caught prey, both are tired
+# Predator did not caught prey, both are tired
+# Predator eating...
+# Predator restored 35.5 strength
+# Herbivorous eating...
+# Herbivorous restored 44.5 strength
+# Herbivorous eating...
+# Herbivorous restored 18.0 strength
+# Herbivorous eating...
+# Herbivorous restored 44.5 strength
+# Predator is removed from forest
+# Predator is removed from forest
+# Predator is removed from forest
+# Predator is removed from forest
+# Predator is removed from forest
+# Herbivorous is removed from forest
+# Herbivorous eating...
+# Herbivorous restored 43.0 strength
+# Predator eating...
+# Predator restored 33.5 strength
+# Herbivorous eating...
+# Herbivorous restored 43.0 strength
+# Herbivorous eating...
+# Herbivorous restored 44.5 strength
+# Herbivorous eating...
+# Herbivorous restored 24.299999999999997 strength
+# Predator did not caught prey, both are tired
+# Herbivorous eating...
+# Herbivorous restored 26.700000000000003 strength
+# Herbivorous eating...
+# Herbivorous restored 25.200000000000003 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Predator did not caught prey, both are tired
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 25.799999999999997 strength
+# The hunt was unsuccessful
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Predator did not caught prey, both are tired
+# Herbivorous eating...
+# Herbivorous restored 26.700000000000003 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Predator did not caught prey, both are tired
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 26.700000000000003 strength
+# Predator is removed from forest
+# Predators is gone!
