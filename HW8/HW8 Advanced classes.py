@@ -38,8 +38,7 @@ class Predator(Animal):
             else:
                 print('Predator did not caught prey, both are tired')
                 self.current_strength = self.current_strength - 0.3 * self.max_strength
-                forest.animals[prey.id].current_strength = forest.animals[prey.id].current_strength - 0.3 * \
-                                                          forest.animals[prey.id].max_strength
+                forest.animals[prey.id].current_strength = forest.animals[prey.id].current_strength - 0.3 * forest.animals[prey.id].max_strength
 
     def __str__(self):
         return f'{self.__class__.__name__}'
@@ -83,8 +82,7 @@ class Forest:
 
 def animal_generator():
     while True:
-        generated_animal = random.choice((Predator(random.randint(25, 100), random.randint(25, 100)),
-                                          Herbivorous(random.randint(25, 100), random.randint(25, 100))))
+        generated_animal = random.choice((Predator(random.randint(25, 100), random.randint(25, 100)), Herbivorous(random.randint(25, 100), random.randint(25, 100))))
         generated_animal.id = uuid.uuid4()
         yield generated_animal
 
