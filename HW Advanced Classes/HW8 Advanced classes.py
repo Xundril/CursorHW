@@ -110,7 +110,7 @@ if __name__ == "__main__":
         time.sleep(1)
 
 
-## Output (one of other results):
+## Output (one of random results):
 
 # There is new animal Predator
 # There is new animal Herbivorous
