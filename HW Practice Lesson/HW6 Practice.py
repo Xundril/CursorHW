@@ -39,7 +39,6 @@ class PlantsStates:
     red: int
     rotten: int
 
-
 class Vegetables(ABC):
     def __init__(self, states, _vegetable_type, name):
         self.states = states
