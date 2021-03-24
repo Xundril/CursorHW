@@ -1,0 +1,66 @@
+2021-03-24 23:21:57,263 - root - INFO - !Start!
+2021-03-24 23:21:59,939 - root - INFO - Entered first value 1
+2021-03-24 23:22:01,234 - root - INFO - Entered second value 2
+2021-03-24 23:22:03,170 - root - INFO - Checked action
+2021-03-24 23:22:03,170 - root - INFO - Choosed action +
+2021-03-24 23:22:03,171 - root - INFO - Called function calc
+2021-03-24 23:22:03,171 - root - INFO - Printed result: 3
+2021-03-24 23:22:03,171 - root - INFO - !End!
+2021-03-24 23:22:06,799 - root - INFO - !Start!
+2021-03-24 23:22:10,794 - root - INFO - Entered first value 10
+2021-03-24 23:22:12,522 - root - INFO - Entered second value 5
+2021-03-24 23:22:14,339 - root - INFO - Checked action
+2021-03-24 23:22:14,339 - root - INFO - Choosed action -
+2021-03-24 23:22:14,339 - root - INFO - Called function calc
+2021-03-24 23:22:14,339 - root - INFO - Printed result: 5
+2021-03-24 23:22:14,339 - root - INFO - !End!
+2021-03-24 23:22:18,506 - root - INFO - !Start!
+2021-03-24 23:22:27,002 - root - INFO - Entered first value 5
+2021-03-24 23:22:28,002 - root - INFO - Entered second value 5
+2021-03-24 23:22:31,419 - root - INFO - Checked action
+2021-03-24 23:22:31,419 - root - INFO - Choosed action *
+2021-03-24 23:22:31,419 - root - INFO - Called function calc
+2021-03-24 23:22:31,419 - root - INFO - Printed result: 25
+2021-03-24 23:22:31,419 - root - INFO - !End!
+2021-03-24 23:22:34,806 - root - INFO - !Start!
+2021-03-24 23:22:47,954 - root - INFO - Entered first value 100
+2021-03-24 23:22:49,355 - root - INFO - Entered second value 4
+2021-03-24 23:22:51,738 - root - INFO - Checked action
+2021-03-24 23:22:51,738 - root - INFO - Choosed action /
+2021-03-24 23:22:51,738 - root - INFO - division is finished, 100, 4
+2021-03-24 23:22:51,738 - root - INFO - Called function calc
+2021-03-24 23:22:51,738 - root - INFO - Printed result: 25.0
+2021-03-24 23:22:51,738 - root - INFO - !End!
+2021-03-24 23:23:58,024 - root - INFO - !Start!
+2021-03-24 23:24:03,978 - root - INFO - Entered first value 100
+2021-03-24 23:24:05,162 - root - INFO - Entered second value 5
+2021-03-24 23:24:10,731 - root - INFO - Checked action
+2021-03-24 23:24:10,731 - root - INFO - Choosed action sqrt
+2021-03-24 23:24:10,731 - root - INFO - Called function calc
+2021-03-24 23:24:10,731 - root - INFO - Printed result: 10.0
+2021-03-24 23:24:10,731 - root - INFO - !End!
+2021-03-24 23:24:21,990 - root - INFO - !Start!
+2021-03-24 23:24:25,891 - root - INFO - Entered first value 8
+2021-03-24 23:24:32,555 - root - INFO - Entered second value 2
+2021-03-24 23:24:35,467 - root - INFO - Checked action
+2021-03-24 23:24:35,467 - root - INFO - Choosed action **
+2021-03-24 23:24:35,467 - root - INFO - Called function calc
+2021-03-24 23:24:35,467 - root - INFO - Printed result: 64
+2021-03-24 23:24:35,467 - root - INFO - !End!
+2021-03-24 23:24:44,437 - root - INFO - !Start!
+2021-03-24 23:24:50,099 - root - INFO - Entered first value 100
+2021-03-24 23:24:59,083 - root - INFO - Entered second value 0
+2021-03-24 23:25:01,506 - root - INFO - Checked action
+2021-03-24 23:25:01,506 - root - INFO - Choosed action /
+2021-03-24 23:25:01,506 - root - ERROR - Divide by zero
+2021-03-24 23:25:01,507 - root - INFO - Called function calc
+2021-03-24 23:25:01,507 - root - INFO - Printed result: 0
+2021-03-24 23:25:01,507 - root - INFO - !End!
+2021-03-24 23:25:06,634 - root - INFO - !Start!
+2021-03-24 23:25:12,123 - root - INFO - Entered first value 5
+2021-03-24 23:25:14,315 - root - INFO - Entered second value 125
+2021-03-24 23:25:18,907 - root - INFO - Checked action
+2021-03-24 23:25:18,907 - root - INFO - Choosed action %
+2021-03-24 23:25:18,907 - root - INFO - Called function calc
+2021-03-24 23:25:18,907 - root - INFO - Printed result: 6.25
+2021-03-24 23:25:18,907 - root - INFO - !End!
