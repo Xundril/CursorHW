@@ -9,22 +9,15 @@ import time
 class Animal(ABC):
     def __init__(self, strength: int, speed: int):
         self.id = None
-        self.max_power = strength
-        self.current_strength = 1
+        self.max_strength = strength
+        self.current_strength = strength
         self.speed = speed
 
     @abstractmethod
     def eat(self, forest: Forest):
-        raise NotImplementedError
+        raise NotImplementedError('Your method is not implemented')
 
 class Predator(Animal):
-    def __init__(self, strength: int, speed: int):
-        super().__init__(strength, speed)
-        self.id = None
-        self.max_strength = strength
-        self.current_strength = 2
-        self.speed = speed
-
     def eat(self, forest: Forest):
         prey = random.choice(list(forest.animals.values()))
         if prey.id == self.id:
@@ -35,31 +28,24 @@ class Predator(Animal):
                 tmp = self.current_strength
                 self.current_strength = min(self.current_strength + self.max_strength * 0.5, self.max_strength)
                 print(f'Predator restored {self.current_strength - tmp} strength')
+                prey.current_strength = 0
             else:
-                print('Predator did not caught prey, both are tired')
+                print('Predator did not caught prey')
                 self.current_strength = self.current_strength - 0.3 * self.max_strength
-                forest.animals[prey.id].current_strength = forest.animals[prey.id].current_strength - 0.3 * forest.animals[prey.id].max_strength
+                prey.current_strength = prey.current_strength - 0.3 * prey.max_strength
 
     def __str__(self):
         return f'{self.__class__.__name__}'
 
 class Herbivorous(Animal):
-    def __init__(self, strength: int, speed: int):
-        super().__init__(strength, speed)
-        self.id = None
-        self.max_strength = strength
-        self.current_strength = 1.5
-        self.speed = speed
-
-    def __str__(self):
-        return f'{self.__class__.__name__}'
-
     def eat(self, forest: Forest):
         print('Herbivorous eating...')
         tmp = self.current_strength
         self.current_strength = min(self.current_strength + self.max_strength * 0.5, self.max_strength)
         print(f'Herbivorous restored {self.current_strength - tmp} strength')
 
+    def __str__(self):
+        return f'{self.__class__.__name__}'
 
 AnyAnimal: Any[Herbivorous, Predator]
 
@@ -79,6 +65,17 @@ class Forest:
     def any_predator_left(self):
         return not all(isinstance(animal, Herbivorous) for animal in self.animals.values())
 
+    def __iter__(self):
+        self.num = 0
+        self.animal_item = list(self.animals.values())
+        return self
+
+    def __next__(self):
+        self.num += 1
+        if self.num <= len(self.animal_item):
+            return self.animal_item[self.num - 1]
+        else:
+            raise StopIteration
 
 def animal_generator():
     while True:
