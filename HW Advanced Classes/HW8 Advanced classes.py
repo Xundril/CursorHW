@@ -111,59 +111,14 @@ if __name__ == "__main__":
 
 # There is new animal Predator
 # There is new animal Herbivorous
-# There is new animal Predator
-# There is new animal Predator
-# There is new animal Predator
-# There is new animal Predator
-# There is new animal Predator
 # There is new animal Herbivorous
 # There is new animal Herbivorous
 # There is new animal Herbivorous
-# Predator did not caught prey, both are tired
-# Herbivorous eating...
-# Herbivorous restored 43.0 strength
-# Predator did not caught prey, both are tired
-# Predator did not caught prey, both are tired
-# Predator did not caught prey, both are tired
-# Predator did not caught prey, both are tired
-# Predator eating...
-# Predator restored 35.5 strength
-# Herbivorous eating...
-# Herbivorous restored 44.5 strength
-# Herbivorous eating...
-# Herbivorous restored 18.0 strength
-# Herbivorous eating...
-# Herbivorous restored 44.5 strength
-# Predator is removed from forest
-# Predator is removed from forest
-# Predator is removed from forest
-# Predator is removed from forest
-# Predator is removed from forest
-# Herbivorous is removed from forest
-# Herbivorous eating...
-# Herbivorous restored 43.0 strength
-# Predator eating...
-# Predator restored 33.5 strength
-# Herbivorous eating...
-# Herbivorous restored 43.0 strength
-# Herbivorous eating...
-# Herbivorous restored 44.5 strength
-# Herbivorous eating...
-# Herbivorous restored 24.299999999999997 strength
-# Predator did not caught prey, both are tired
-# Herbivorous eating...
-# Herbivorous restored 26.700000000000003 strength
-# Herbivorous eating...
-# Herbivorous restored 25.200000000000003 strength
-# Herbivorous eating...
-# Herbivorous restored 0 strength
-# Predator did not caught prey, both are tired
-# Herbivorous eating...
-# Herbivorous restored 0 strength
-# Herbivorous eating...
-# Herbivorous restored 0 strength
-# Herbivorous eating...
-# Herbivorous restored 25.799999999999997 strength
+# There is new animal Predator
+# There is new animal Predator
+# There is new animal Herbivorous
+# There is new animal Predator
+# There is new animal Predator
 # The hunt was unsuccessful
 # Herbivorous eating...
 # Herbivorous restored 0 strength
@@ -171,17 +126,70 @@ if __name__ == "__main__":
 # Herbivorous restored 0 strength
 # Herbivorous eating...
 # Herbivorous restored 0 strength
-# Predator did not caught prey, both are tired
 # Herbivorous eating...
-# Herbivorous restored 26.700000000000003 strength
+# Herbivorous restored 0 strength
+# Predator did not caught prey
+# Predator did not caught prey
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Predator did not caught prey
+# Predator eating...
+# Predator restored 0 strength
+# Predator is removed from forest
+# Predator did not caught prey
 # Herbivorous eating...
 # Herbivorous restored 0 strength
 # Herbivorous eating...
 # Herbivorous restored 0 strength
-# Predator did not caught prey, both are tired
+# Herbivorous eating...
+# Herbivorous restored 17.5 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Predator did not caught prey
+# Predator did not caught prey
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# The hunt was unsuccessful
+# Predator did not caught prey
 # Herbivorous eating...
 # Herbivorous restored 0 strength
 # Herbivorous eating...
-# Herbivorous restored 26.700000000000003 strength
+# Herbivorous restored 21.299999999999997 strength
+# Herbivorous eating...
+# Herbivorous restored 14.0 strength
+# Herbivorous eating...
+# Herbivorous restored 25.200000000000003 strength
+# Predator did not caught prey
+# Predator did not caught prey
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Predator did not caught prey
+# Predator is removed from forest
+# Predator did not caught prey
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 21.299999999999997 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 25.200000000000003 strength
+# Predator did not caught prey
+# Herbivorous eating...
+# Herbivorous restored 26.4 strength
+# Predator did not caught prey
+# Predator is removed from forest
+# Predator is removed from forest
+# Predator did not caught prey
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
+# Herbivorous eating...
+# Herbivorous restored 42.0 strength
+# Herbivorous eating...
+# Herbivorous restored 0 strength
 # Predator is removed from forest
 # Predators is gone!
