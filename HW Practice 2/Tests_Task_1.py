@@ -7,7 +7,7 @@ class TestRobotCleaner(unittest.TestCase):
 
     def setUp(self) -> None:
         self.robot = Robot_Cleaner(100, 0, 100)
-        self.robot_1 = Robot_Cleaner('25', 0, 80)
+        self.robot_1 = Robot_Cleaner('30', 0, 80)
         self.robot_2 = Robot_Cleaner(60, -10, 50.0)
         self.vacuum_cleaners = [self.robot, self.robot_1, self.robot_2]
 

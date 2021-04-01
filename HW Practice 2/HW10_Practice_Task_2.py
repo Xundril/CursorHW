@@ -76,7 +76,7 @@ class Registration:
         if email in self.user_database and password in self.user_database.values():
             return self.user_token
         else:
-            raise AuthorizationError("Invalid login or password")
+            raise AuthorizationError("Invalid login / password")
 
     def check_name(self, name):
         for i in name:

@@ -78,7 +78,7 @@ class Robot_Cleaner:
 
     def vacuum_cleaner(self):
         self.garbage_cell += self.filling_the_cell
-        print(f'Garbage level  - {self.garbage_cell} % \n')
+        print(f'Garbage level - {self.garbage_cell} % \n')
 
 
 robot = Robot_Cleaner(100, 0, 100)
