@@ -19,7 +19,7 @@ class TestRegistration(unittest.TestCase):
             self.user.registration("Andrii", "Andrii@gmail.com", "zxcvb_987")
         with self.assertRaises(PasswordLengthError):
             self.user.registration("Andrii", "Andrii@gmail.com", "zxcvb98787whfohf")
-        self.assertEqual(self.user.registration("Mike", "Mike@gmail.com", "qwerty123"), 200)
+        self.assertEqual(self.user.registration("Mike", "Mikle@gmail.com", "qwerty123"), 200)
 
     def test_authorization(self):
         with self.assertRaises(AuthorizationError):
