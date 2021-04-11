@@ -45,7 +45,7 @@ class Registration:
     user_database = {}
     user_token = UserToken()
 
-    unacceptable_symbols = [',', ':', ';', '!', '?', '/', '|', '#', '$', '%', '^', '&', '*', '-', '+', '=', '(', ')', '{', '}', '[', ']', '<', '>', '`', '~', '_', '"']
+    unacceptable_symbols = [',', ':', ';', '!', '?', '/', '|', '#', '$', '%', '^', '&', '*', '-', '+', '=', '(', ')', '{', '}', '[', ']', '<', '>', '`', '~', '_', '"', ' ']
 
     def registration(self, name: str, email: str, password: str):
 

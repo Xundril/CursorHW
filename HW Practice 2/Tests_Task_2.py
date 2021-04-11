@@ -12,7 +12,7 @@ class TestRegistration(unittest.TestCase):
         with self.assertRaises(EmailError):
             self.user.registration("John", "John_k@gmail.com", "kwjlfew7")
         with self.assertRaises(EmailLengthError):
-            self.user.registration("Anna", "Annafgheegyrggg1234567890@mail.com", "llleyu0935")
+            self.user.registration("Anna", "Annafgheegyrggg1234567890@gmail.com", "llleyu0935")
         with self.assertRaises(UserAlreadyExist):
             self.user.registration("Mike", "Mikhail@gmail.com", "qwerty12345")
         with self.assertRaises(PasswordError):
