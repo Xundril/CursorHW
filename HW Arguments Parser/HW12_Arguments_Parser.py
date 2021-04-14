@@ -15,7 +15,6 @@
 # Example of input:
 # -exp 3 -sex female -position DevOps -city Kyiv --path_to_source_files . ...
 
-
 import argparse
 import csv
 
@@ -29,7 +28,7 @@ parser.add_argument("--position", "-p", required=False, help="Position")
 parser.add_argument("--age", "-a", required=False, help="Age")
 parser.add_argument("--path_to_source_files", required=True, help="Path to source file")
 parser.add_argument("--destination_path", required=False, default=".", help="Path for new file")
-parser.add_argument("--destination_filename", required=False, default="2020_june_mini.csv", help="Name of new file")
+parser.add_argument("--destination_filename", required=False, default=f"2020_june_mini.csv", help="Name of new file")
 args = parser.parse_args()
 
 if args.age is None:
@@ -41,21 +40,18 @@ if args.position is None:
 if args.sex is None:
     args.sex = ""
 
-file_len = 0
-path_to_open = f'{args.path_to_source_files}/2020_june_mini.csv'
-with open(path_to_open, 'r', encoding="utf8") as f:
-    reader = csv.reader(f)
-    for row in reader:
-        if file_len == 0:
-            header = row
-        file_len += 1
-new_el = [file_len, args.city, '', '', args.position, args.exp, args.current_job_exp, '', '', args.age, args.sex, '',
-          '', '', '', '', '', '']
+list_with_arg = []
+path_to_open = "2020_june_mini.csv"
+with open(path_to_open, 'r', encoding="utf8") as file:
+    reader = csv.DictReader(file)
+    head = reader.fieldnames
+    for dictates in reader:
+        if dictates['exp'] == args.exp and dictates['Город'] == args.city and dictates['Пол'] == args.sex and \
+                dictates['Должность'] == args.position:
+            list_with_arg.append(dictates)
 
 path_to_create = f'{args.destination_path}/{args.destination_filename}'
-with open(path_to_create, 'a', encoding="utf8") as f:
-    writer = csv.writer(f)
-    if args.destination_filename != "2020_june_mini.csv":
-        writer.writerow(header)
-        new_el[0] = 2
-    writer.writerow(new_el)
+with open(args.destination_path + "2020_june_mini_2.csv", "w", encoding='utf-8') as file:
+    writer = csv.DictWriter(file, fieldnames=head)
+    for j in list_with_arg:
+        writer.writerow(j)
